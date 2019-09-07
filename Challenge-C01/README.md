@@ -1,5 +1,8 @@
 # Js-school
-JavaScript school week challenges 
+Jobsity javaScript school 
+
+
+Weekly challenges and tasks
 
 
 **Full name:** Karen Jose Benedetti Merlano
