@@ -9,6 +9,12 @@ Challenge general information:
 * Get a list of all stories when Agent X (Nijo) appears
 * Generate JSON document with this information and push to GitHub repo
 
-### FIRST QUERY: Cable & Deadpool characters(2004) #46 (Zombie Variant)
+### What I need to start
+
+* Postman: 
+
+### First query: Cable & Deadpool characters (2004) #46 (Zombie Variant)
+
+### Second query: Agent X stories
 
 
