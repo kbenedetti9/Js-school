@@ -12,7 +12,9 @@ Challenge general information:
 ### What I needed to start
 
 * Install postman: I downloaded and installed postman tool to be able to do the queries by GET method. 
+
 * Get an API key: To get the public and private key I registered in marvel's URL to create my developer account.
+
 * Get the hash: With my public and private API key, and a timestamp I generated the hash that I had to use for the queries, by using an online hash generator.
 
 
