@@ -30,3 +30,8 @@ I did the request by using the same parameters as the first query, but I noticed
 for that I added one more parameter that allowed to show all the results I was searching for, this by establishing a limit of 23. 
 The request URL was : http://gateway.marvel.com/v1/public/characters/1011031/stories that shows after characters the ID of *Agent X* to specify the character I was requesting.
 I got *Agent X* ID with http://gateway.marvel.com/v1/public/characters, request URL used to show all characters. 
+
+
+### Json
+
+At last, with all the results I had after I did the queries, I created one Json with two objects, it contains the results of both requests: **cable&deadpool characters** and **agent x stories**. 
