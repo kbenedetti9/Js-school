@@ -24,4 +24,7 @@ I got the ID of the comic before I did the request to make it easier and got onl
 
 ### Second query: Agent X stories
 
-I did the request using the same parameters 
+I did the request by using the same parameters as the first query, but I noticed that the results had to be 23 and postman showed only 20, 
+for that I added one more parameter that allowed to show all the results I was searching for, this by establishing a limit of 23. 
+The request URL was : http://gateway.marvel.com/v1/public/characters/1011031/stories that shows after characters the ID of *Agent X* to specify the character I was requesting.
+I got *Agent X* ID with http://gateway.marvel.com/v1/public/characters, request URL used to show all characters. 
