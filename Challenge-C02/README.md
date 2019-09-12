@@ -21,17 +21,20 @@ Challenge general information:
 ### First query: Cable & Deadpool characters (2004) #46 (Zombie Variant)
 
 I did the request to get the information of Cable & Deadpool characters by using as parameters a timestamp of one, the public API key and the hash that I had generated before, with the request URL:http://gateway.marvel.com/v1/public/comics/21845 that shows as after the slash the ID that belongs to the comic that I was searching for: *Cable & Deadpool (Zombie Variant)*. 
-I got the ID of the comic before I did the request to make it easier and got only the information of the comic I wanted, this by doing another request at postman by using : http://gateway.marvel.com/v1/public/comics that shows all the comics.
+
+I got the ID of the comic before I did the request, to make it easier and got only the information of the comic I wanted, this by doing another request at postman by using : http://gateway.marvel.com/v1/public/comics that shows all the comics.
 
 
 ### Second query: Agent X stories
 
 I did the request by using the same parameters as the first query, but I noticed that the results had to be 23 and postman showed only 20, 
 for that I added one more parameter that allowed to show all the results I was searching for, this by establishing a limit of 23. 
+
 The request URL was : http://gateway.marvel.com/v1/public/characters/1011031/stories that shows after characters the ID of *Agent X* to specify the character I was requesting.
+
 I got *Agent X* ID with http://gateway.marvel.com/v1/public/characters, request URL used to show all characters. 
 
 
 ### Json
 
-At last, with all the results I had after I did the queries, I created one Json with two objects, it contains the results of both requests: **cable&deadpool characters** and **agent x stories**. 
+I took in each request only the information that was needed. At last, with all the results I had after I did the queries, I created one Json with two objects, it contains the results of both requests: **cable&deadpool characters** and **agent x stories**, it can be found in **Marvel.json.**
