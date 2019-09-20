@@ -1,0 +1,710 @@
+* {
+  box-sizing:border-box;
+}
+  
+body {
+  margin:0;
+  padding: 0;
+  width:1280px;
+  background:#222;
+}
+
+/*GENERAL PIANO STYLES*/
+
+#piano{/*Piano container for keys*/
+  margin-top:75px;
+  height:300px;
+  width:1280px;
+  margin-left:0;
+  padding: 0;
+  box-shadow: 0px 0px 22px 20px rgba(0,0,0,0.75); 
+}
+
+.key{/*Piano keys*/
+  margin:0;
+  padding:0;
+  position:relative;
+  float:left;
+}
+
+.white{/*White keys*/
+  -webkit-box-shadow: 0px 0px 22px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 22px 5px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 22px 5px rgba(0,0,0,0.75);
+  /* z-index:1; */
+  height:300px;
+  width:91.40px;
+  border: solid 3px black;
+  border-radius:5px 5px 5px 5px;   
+}
+
+.black {/*Black keys*/
+  height:180px;
+  width:35.23px;
+  margin:0 0 0 -1em;
+  z-index:2;
+  border:1px solid #000;
+  border-radius:0 0 6px 6px;
+  box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -5px 2px 3px rgba(0,0,0,0.6) inset,0 2px 4px rgba(0,0,0,0.5);
+  background:linear-gradient(45deg,#222 0%,#555 100%);
+  background: #000;
+}
+
+.afterBlack{/*White keys after sharp keys*/
+  margin:0 0 0 -1.2em;
+}
+
+/*KEYS STYLES*/
+
+.do{/*DO keys*/
+  background-color: #E040FB;
+  box-shadow: 0px 6px 0px #AA00FF;
+}
+
+.re{/*RE keys*/
+  box-shadow: 0px 6px 0px #6200EA;
+  background-color: #7C4DFF;
+}
+
+.mi{/*MI keys*/
+  background-color: #448AFF;
+  box-shadow: 0px 6px 0px #2962FF;
+}
+
+.fa{/*FA keys*/
+  background-color: #9CCC65;
+  box-shadow: 0px 6px 0px #2E7D32;
+}
+
+.sol{/*SOL keys*/
+  background-color: #FFF176;
+  box-shadow: 0px 6px 0px #FFD600;
+}
+
+.la{/*LA keys*/
+  background-color: #FFB74D;
+  box-shadow: 0px 6px 0px #FF9100;
+}
+
+.si{/*SI keys*/
+  background-color: #FF7043;
+  box-shadow: 0px 6px 0px #F4511E;
+}
+
+/*ACTIVE KEYS STYLES*/
+
+.doActivo{/*Active DO keys*/
+  background-color: #AA00FF;
+  margin-top: 5px;
+  box-shadow: none;
+}
+
+.reActivo{/*Active RE keys*/
+  background-color: #6200EA;
+  margin-top: 5px;
+  box-shadow: none;
+}
+
+.miActivo{/*Active MI keys*/
+  background-color: #2962FF;
+  margin-top: 5px;
+  box-shadow: none;
+}
+
+.faActivo{/*Active FA keys*/
+background-color: #2E7D32;
+margin-top: 5px;
+box-shadow: none;
+}
+
+.solActivo{/*Active SOL keys*/
+  background-color: #FFD600;
+  margin-top: 5px;
+  box-shadow: none;
+}
+  
+.laActivo{/*Active LA keys*/
+  background-color: #FF9100;
+  margin-top: 5px;
+  box-shadow: none;
+}
+
+.siActivo{/*Active SI keys*/
+  background-color: #F4511E;
+  margin-top: 5px;
+  box-shadow: none;
+}
+
+.blackActivo{/*Active black keys*/
+  box-shadow: none;
+  margin-top: 5px;
+}
+
+.do:active{
+  background-color: #AA00FF;
+}
+
+.re:active {
+  background-color: #6200EA;
+}
+
+.mi:active {
+  background-color: #2962FF;
+}
+
+.fa:active {
+  background-color: #2E7D32;
+}
+
+.sol:active {
+  background-color: #FFD600;
+}
+
+.la:active {
+  background-color: #FF9100;
+}
+
+.si:active {
+  background-color: #F4511E;
+}
+
+.white:active{
+  box-shadow: none;
+  margin-top: 5px;
+}
+
+.black:active{
+  box-shadow: none;
+  margin-top: 5px;
+}
+
+/*KEYBOARD REFERENCES STYLES*/
+
+.note{/*Keyboard reference*/
+  color: black;
+  font-family: 'Baloo', cursive;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.circle {/*Circle around keyboard reference*/
+  width: 50px;
+  height: 50px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  float:left;
+}
+
+#noteDo{
+  position: absolute;
+  left: 20px;
+  top: 545px;
+  background-color: #E040FB;
+  box-shadow: 0px 6px 0px #AA00FF;
+}
+
+#q{
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+
+#noteRe{
+  position: absolute;
+  left: 110px;
+  top: 545px;
+  box-shadow: 0px 6px 0px #6200EA;
+  background-color: #7C4DFF;
+}
+
+#w{
+  position: absolute;
+  left: 12px;
+  top: 5px;
+}
+
+#noteMi{
+  position: absolute;
+  left: 205px;
+  top: 545px;
+  background-color: #448AFF;
+  box-shadow: 0px 6px 0px #2962FF;
+}
+
+#e{
+  position: absolute;
+  left: 17px;
+  top: 5px;
+}
+
+#noteFa{
+  position: absolute;
+  left: 295px;
+  top: 545px;
+  background-color: #9CCC65;
+  box-shadow: 0px 6px 0px #2E7D32;
+}
+
+#r{
+  position: absolute;
+  left: 16px;
+  top: 5px;
+}
+
+#noteSol{
+  position: absolute;
+  left: 385px;
+  top: 545px;
+  background-color: #FFF176;
+  box-shadow: 0px 6px 0px #FFD600;
+}
+
+#t{
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+
+#noteLa{
+  position: absolute;
+  left: 475px;
+  top: 545px;
+  background-color: #FFB74D;
+  box-shadow: 0px 6px 0px #FF9100;
+}
+
+#y{
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+
+#noteSi{
+  position: absolute;
+  left: 570px;
+  top: 545px;
+  background-color: #FF7043;
+  box-shadow: 0px 6px 0px #F4511E;
+}
+
+#u{
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+
+#noteDo2{
+  position: absolute;
+  left: 660px;
+  top: 545px;
+  background-color: #E040FB;
+  box-shadow: 0px 6px 0px #AA00FF;
+}
+
+#v{
+  position: absolute;
+  left: 15px;
+  top: 5px;
+
+}
+
+#noteRe2{
+  position: absolute;
+  left: 755px;
+  top: 545px;
+  box-shadow: 0px 6px 0px #6200EA;
+  background-color: #7C4DFF;
+}
+
+#b{
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+
+#noteMi2{
+  position: absolute;
+  left: 842px;
+  top: 545px;
+  background-color: #448AFF;
+  box-shadow: 0px 6px 0px #2962FF;
+}
+
+#n{
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+
+#noteFa2{
+  position: absolute;
+  left: 935px;
+  top: 545px;
+  background-color: #9CCC65;
+  box-shadow: 0px 6px 0px #2E7D32;
+}
+
+#m{
+  position: absolute;
+  left: 13px;
+  top: 5px;
+}
+
+#noteSol2{
+  position: absolute;
+  left: 1025px;
+  top: 545px;
+  background-color: #FFF176;
+  box-shadow: 0px 6px 0px #FFD600;
+}
+
+#comma{
+  position: absolute;
+  left: 22px;
+  top: 0px;
+}
+
+#noteLa2{
+  position: absolute;
+  left: 1120px;
+  top: 545px;
+  background-color: #FFB74D;
+  box-shadow: 0px 6px 0px #FF9100;
+}
+
+#dot{
+  position: absolute;
+  left: 22px;
+  top: 0px;
+}
+
+#noteSi2{
+  position: absolute;
+  left: 1210px;
+  top: 545px;
+  background-color: #FF7043;
+  box-shadow: 0px 6px 0px #F4511E;
+}
+
+#slash{
+  position: absolute;
+  left: 22px;
+  top: 0px;
+}
+
+.noteL{
+  color: black;
+  font-family: 'Baloo', cursive;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.circleL {
+  width: 30px;
+  height: 30px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  float:left;
+}
+
+#noteDoS{
+  position: absolute;
+  left: 80px;
+  top: 180px;
+  background-color: #000000;
+  border: solid 2px #FF7043;;
+}
+
+#two{
+  position: absolute;
+  left: 9px;
+  top: 1px;
+  color:#FF7043;
+}
+
+#noteReS{
+  position: absolute;
+  left: 170px;
+  top: 180px;
+  background-color: #000000;
+  border: solid 2px #FFB74D;
+}
+
+#three{
+  position: absolute;
+  left: 9px;
+  top: 1px;
+  color:#FFB74D;
+}
+
+#noteFaS{
+  position: absolute;
+  left: 352px;
+  top: 180px;
+  background-color: #000000;
+ border: solid 2px #FFF176;
+}
+
+#five{
+  position: absolute;
+  left: 9px;
+  top: 1px;
+  color:#FFF176;
+}
+
+#noteSolS{
+position: absolute;
+left: 444px;
+top: 180px;
+background-color: #000000;
+border: solid 2px #9CCC65;
+}
+
+#six{
+position: absolute;
+left: 9px;
+top: 1px;
+color:#9CCC65;
+}
+
+#noteLaS{
+  position: absolute;
+  left: 535px;
+  top: 180px;
+  background-color: #000000;
+  border: solid 2px #44D3FF;
+}
+  
+#seven{
+  position: absolute;
+  left: 9px;
+  top: 1px;
+  color:#44D3FF;
+}
+
+#noteDoS2{
+  position: absolute;
+  left: 718px;
+  top: 180px;
+  background-color: #000000;
+  border: solid 2px #448AFF;
+}
+    
+#g{
+  position: absolute;
+  left: 8px;
+  top: 1px;
+  color:#448AFF;
+}
+
+#noteReS2{
+  position: absolute;
+  left: 810px;
+  top: 180px;
+  background-color: #000000;
+  border: solid 2px #BC37F2;
+}
+      
+#h{
+  position: absolute;
+  left: 8px;
+  top: 1px;
+  color:#BC37F2;
+}
+
+#noteFaS2{
+  position: absolute;
+  left: 992px;
+  top: 180px;
+  background-color: #000000;
+  border: solid 2px #7C4DFF;
+}
+        
+#k{
+  position: absolute;
+  left: 8px;
+  top: 1px;
+  color:#7C4DFF;
+}
+
+#noteSolS2{
+  position: absolute;
+  left: 1083px;
+  top: 180px;
+  background-color: #000000;
+  border: solid 2px #F841BD;
+}
+          
+#l{
+  position: absolute;
+  left: 8px;
+  top: 1px;
+  color:#F841BD;
+}      
+
+#noteLaS2{
+  position: absolute;
+  left: 1175px;
+  top: 180px;
+  background-color: #000000;
+  border: solid 2px #E040FB;
+}
+            
+#semi{
+  position: absolute;
+  left: 11px;
+  top: 1px;
+  color:#E040FB;
+}   
+
+#myKey{
+  /* border:solid 3px red; */
+  width:1260px;
+  height:110px;
+  margin-top:10px;
+}
+
+#myNote{
+  text-align: center;
+  color: white;
+  font-family: 'Baloo', cursive;
+  font-weight: bold;
+  font-size: 60px;
+  text-shadow:1px 1px 1px black; 
+}
+
+#fucsia{
+  position: absolute;
+  top:60px;
+  width:400px;
+  height:5px;
+  border:solid 1px #E040FB;
+  border-radius: 0 3px 3px 0;
+}
+
+#purple{
+  position: absolute;
+  top:68px;
+  width:400px;
+  height:5px;
+  border:solid 1px #7C4DFF;
+  border-radius: 0 3px 3px 0;
+}
+
+#blue{
+  position: absolute;
+  top:76px;
+  width:400px;
+  height:5px;
+  border:solid 1px #448AFF;
+  border-radius: 0 3px 3px 0;
+}
+
+#green{
+  position: absolute;
+  top:84px;
+  width:400px;
+  height:5px;
+  border:solid 1px #9CCC65;
+  border-radius: 0 3px 3px 0;
+}
+
+#yellow{
+  position: absolute;
+  top:92px;
+  width:400px;
+  height:5px;
+  border:solid 1px #FFF176;
+  border-radius: 0 3px 3px 0;
+}
+
+#oranged{
+  position: absolute;
+  top:100px;
+  width:400px;
+  height:5px;
+  border:solid 1px #FFB74D;
+  border-radius: 0 3px 3px 0;
+
+}
+
+#orange{
+  position: absolute;
+  top:108px;
+  width:400px;
+  height:5px;
+  border:solid 1px #FF7043;
+  border-radius: 0 3px 3px 0;
+}
+
+#fucsia2{
+  position: absolute;
+  left:880px;
+  top:60px;
+  width:400px;
+  height:5px;
+  border:solid 1px #E040FB;
+  border-radius: 3px 0 0 3px;
+}
+
+#purple2{
+  position: absolute;
+  left:880px;
+  top:68px;
+  width:400px;
+  height:5px;
+  border:solid 1px #7C4DFF;
+  border-radius: 3px 0 0 3px;
+}
+
+#blue2{
+  position: absolute;
+  left:880px;
+  top:76px;
+  width:400px;
+  height:5px;
+  border:solid 1px #448AFF;
+  border-radius: 3px 0 0 3px;
+}
+
+#green2{
+  position: absolute;
+  left:880px;
+  top:84px;
+  width:400px;
+  height:5px;
+  border:solid 1px #9CCC65;
+  border-radius: 3px 0 0 3px;
+}
+
+#yellow2{
+  position: absolute;
+  left:880px;
+  top:92px;
+  width:400px;
+  height:5px;
+  border:solid 1px #FFF176;
+  border-radius: 3px 0 0 3px;
+}
+
+#oranged2{
+  position: absolute;
+  left:880px;
+  top:100px;
+  width:400px;
+  height:5px;
+  border:solid 1px #FFB74D;
+  border-radius: 3px 0 0 3px;
+}
+
+#orange2{
+  position: absolute;
+  left:880px;
+  top:108px;
+  width:400px;
+  height:5px;
+  border:solid 1px #FF7043;
+  border-radius: 3px 0 0 3px;
+}

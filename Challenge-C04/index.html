@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Piano Simulator</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Baloo|Lexend+Exa|Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+</head>
+<div id="fucsia"></div>
+<div id="purple"></div>
+<div id="blue"></div>
+<div id="green"></div>
+<div id="yellow"></div>
+<div id="oranged"></div>
+<div id="orange"></div>
+<div id="myKey">
+    <h1 id="myNote">  Piano Simulator</h1>
+</div>
+<div id="fucsia2"></div>
+<div id="purple2"></div>
+<div id="blue2"></div>
+<div id="green2"></div>
+<div id="yellow2"></div>
+<div id="oranged2"></div>
+<div id="orange2"></div>
+<body>
+    <div id="noteDoS" class="circleL">
+        <span id="two" class="noteL">2</span>
+    </div>
+    <div id="noteReS" class="circleL">
+        <span id="three" class="noteL">3</span>
+    </div>
+    <div id="noteFaS" class="circleL">
+        <span id="five" class="noteL">5</span>
+    </div>
+    <div id="noteSolS" class="circleL">
+        <span id="six" class="noteL">6</span>
+    </div>
+    <div id="noteLaS" class="circleL">
+        <span id="seven" class="noteL">7</span>
+    </div>
+    <div id="noteDoS2" class="circleL">
+        <span id="g" class="noteL">G</span>
+    </div>
+    <div id="noteReS2" class="circleL">
+        <span id="h" class="noteL">H</span>
+    </div>
+    <div id="noteFaS2" class="circleL">
+        <span id="k" class="noteL">K</span>
+    </div>
+    <div id="noteSolS2" class="circleL">
+        <span id="l" class="noteL">L</span>
+    </div>
+    <div id="noteLaS2" class="circleL">
+        <span id="semi" class="noteL">;</span>
+    </div>
+    <div id="piano">
+        <div id="do_1" class="key white do do1"></div>
+        <div id="do_1_n" class="key black do1"></div>
+        <div id="re_1" class="key white re re1 afterBlack"></div>
+        <div id="re_1_n" class="key black re1"></div>
+        <div id="mi_1" class="key white mi mi1 afterBlack"></div>
+        <div id="fa_1" class="key white fa fa1"></div>
+        <div id="fa_1_n" class="key black fa1"></div>
+        <div id="sol_1" class="key white sol sol1 afterBlack"></div>
+        <div id="sol_1_n" class="key black sol1"></div>
+        <div id="la_1" class="key white la la1 afterBlack"></div>
+        <div id="la_1_n" class="key black la1"></div>
+        <div id="si_1" class="key white si si1 afterBlack"></div>
+        <div id="do_2" class="key white do do2"></div>
+        <div id="do_2_n" class="key black do2" ></div>
+        <div id="re_2" class="key white  re re2 afterBlack"></div>
+        <div id="re_2_n" class="key black re2"></div>
+        <div id="mi_2" class="key white mi mi2 afterBlack"></div>
+        <div id="fa_2" class="key white fa fa2"></div>
+        <div id="fa_2_n" class="key black fa2"></div>
+        <div id="sol_2" class="key white sol sol2 afterBlack"></div>
+        <div id="sol_2_n" class="key black sol2"></div>
+        <div id="la_2" class="key white la la2 afterBlack"></div>
+        <div id="la_2_n" class="key black la2"></div>
+        <div id="si_2" class="key white si si2 afterBlack" ></div>
+    </div>
+    <div id="noteDo" class="circle">
+        <span id="q" class="note">Q</span>
+    </div>
+    <div id="noteRe" class="circle">
+        <span id="w" class="note">W</span>
+    </div>
+    <div id="noteMi" class="circle">
+        <span id="e" class="note">E</span>
+    </div>
+    <div id="noteFa" class="circle">
+        <span id="r" class="note">R</span>
+    </div>
+    <div id="noteSol" class="circle">
+        <span id="t" class="note">T</span>
+    </div>
+    <div id="noteLa" class="circle">
+        <span id="y" class="note">Y</span>
+    </div>
+    <div id="noteSi" class="circle">
+        <span id="u" class="note">U</span>
+    </div>
+    <div id="noteDo2" class="circle">
+        <span id="v" class="note">V</span>
+    </div>
+    <div id="noteRe2" class="circle">
+        <span id="b" class="note">B</span>
+    </div>
+    <div id="noteMi2" class="circle">
+        <span id="n" class="note">N</span>
+    </div>
+    <div id="noteFa2" class="circle">
+        <span id="m" class="note">M</span>
+    </div>
+    <div id="noteSol2" class="circle">
+        <span id="comma" class="note">,</span>
+    </div>
+    <div id="noteLa2" class="circle">
+        <span id="dot" class="note">.</span>
+    </div>
+    <div id="noteSi2" class="circle">
+        <span id="slash" class="note">/</span>
+    </div>
+    <audio id="audio" src="src/Sounds/DO1.mp3" preload="auto"></audio>
+    <audio id="audio2" src="src/Sounds/DO1-NEGRA.mp3" preload="auto"></audio>
+    <audio id="audio3" src="src/Sounds/RE1.mp3" preload="auto"></audio>
+    <audio id="audio4" src="src/Sounds/RE1-NEGRA.mp3" preload="auto"></audio>
+    <audio id="audio5" src="src/Sounds/MI1.mp3" preload="auto"></audio>
+    <audio id="audio6" src="src/Sounds/FA1.mp3" preload="auto"></audio>
+    <audio id="audio7" src="src/Sounds/FA1-NEGRA.mp3" preload="auto"></audio>
+    <audio id="audio8" src="src/Sounds/SOL1.mp3" preload="auto"></audio>
+    <audio id="audio9" src="src/Sounds/SOL1-NEGRA.mp3" preload="auto"></audio>
+    <audio id="audio10" src="src/Sounds/LA1.mp3" preload="auto"></audio>
+    <audio id="audio11" src="src/Sounds/LA1-NEGRA.mp3" preload="auto"></audio>
+    <audio id="audio12" src="src/Sounds/SI1.mp3" preload="auto"></audio>
+    <audio id="audio13" src="src/Sounds/DO2.mp3" preload="auto"></audio>
+    <audio id="audio14" src="src/Sounds/DO2-NEGRA.mp3" preload="auto"></audio>
+    <audio id="audio15" src="src/Sounds/RE2.mp3" preload="auto"></audio>
+    <audio id="audio16" src="src/Sounds/RE2-NEGRA.mp3" preload="auto"></audio>
+    <audio id="audio17" src="src/Sounds/MI2.mp3" preload="auto"></audio>
+    <audio id="audio18" src="src/Sounds/FA2.mp3" preload="auto"></audio>
+    <audio id="audio19" src="src/Sounds/FA2-NEGRA.mp3" preload="auto"></audio>
+    <audio id="audio20" src="src/Sounds/SOL2.mp3" preload="auto"></audio>
+    <audio id="audio21" src="src/Sounds/SOL2-NEGRA.mp3" preload="auto"></audio>
+    <audio id="audio22" src="src/Sounds/LA2.mp3" preload="auto"></audio>
+    <audio id="audio23" src="src/Sounds/LA2-NEGRA.mp3" preload="auto"></audio>
+    <audio id="audio24" src="src/Sounds/SI2.mp3" preload="auto"></audio>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
