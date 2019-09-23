@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Jobsity</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">-->
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/271436b877.js"></script>
+</head>
+
+<body>
+    <div id="myContainer" class="container-fluid">
+        <div class="row d-flex">
+            <!--Row for navigation bar-->
+            <div id="principal" class="col-12 container ">
+                <!--AGREGUE CONTAINER-->
+                <!--Principal container for navigation bar-->
+                <div class="row d-flex">
+                    <!--Row inside navigation bar-->
+                    <div id="logoContainer" class="d-flex col-md-2 col-sm-0">
+                        <!--Logo container -->
+                        <img id="logo" class="rounded-circle img-fluid border" src="assets/img/logo.jpg" width="50em"
+                            alt="logo">
+                        <!--Logo image-->
+                        <a id="name" class="navbar-brand" href="#">JOBSITY</a>
+                        <!--Name-->
+                    </div>
+                    <div id="container" class="container col-md-10 col-sm-12 ">
+                        <!--Navbar objects container-->
+                        <div class="row">
+                            <!--Row inside navbar objects container-->
+                            <a id="descrip" class=" col-lg-2 col-md-2 col-sm-0" href="#">Bookshelf</a>
+                            <!--Description-->
+                            <div id="space" class="col-lg-4 col-md-0 col-sm-0"></div>
+                            <!--Space-->
+                            <form id="form" class="form-inline col-lg-3 col-md-4 col-sm-4" target="_self">
+                                <div id="searchContainer" class=" form-group d-flex justify-content-lg-end ">
+                                    <!--Search container-->
+                                    <label for="search-field">
+                                        <i id="lens" class="fa fa-search"></i>
+                                    </label>
+                                    <input id="search-field"
+                                        class="form-control form-control-sm align-items-end search-field" type="search"
+                                        name="search" placeholder="Search..." required="">
+                                    <!--Search input-->
+                                </div>
+                            </form>
+                            <!-- </div>-->
+                            <!--Row-->
+                            <div class="vl"></div>
+                            <li id="login" class="dropdown d-flex col-lg-2 col-md-3 col-sm-3">
+                                <a id="options" class="dropdown-toggle text-capitalize" data-toggle="dropdown"
+                                    aria-expanded="false" href="#">Jakob Treml</a>
+                                <div class="dropdown-menu" role="menu">
+                                    <a class="dropdown-item" role="presentation" href="#">Profile</a>
+                                    <a class="dropdown-item" role="presentation" href="#">Logout</a>
+                                </div>
+                            </li>
+                            <!--style-->
+                            <div id="imageContainer" class="col-lg-1 col-md-2">
+                                <!--Container for user image-->
+                                <img id="image" class="rounded-circle img-fluid" src="assets/img/logo.jpg" width="45em"
+                                    alt="user picture">
+                            </div>
+                        </div>
+                        <!--Row-->
+                        <!--  </div>-Collapse nav-->
+                    </div>
+                    <!--Contenedor de nav bar-->
+                </div>
+                <!--Row-->
+            </div>
+            <!--principal-->
+        </div>
+        <!--Row-->
+        <div class="row cambia">
+            <div id="sidebarL" class=" col-lg-2 col-md-2 col-sm-12 d-flex side">
+                <!--Left sidebar-->
+                <ul id="itemsList">
+                    <!--Item list of left sidebar-->
+                    <li class="subtitle">MAIN</li>
+                    <li class="items">
+                        <label>
+                            <i class="fa fa-fw fa-globe"></i>
+                        </label>Quito</li>
+                    <li class="items">
+                        <label>
+                            <i class="fa fa-fw fa-globe"></i>
+                        </label>Cartagena</li>
+                    <li class="items">
+                        <label>
+                            <i class="fa  fa-fw fa-globe"></i>
+                        </label>Medellín</li>
+                    <li class="items">
+                        <label>
+                            <i class="fas fa-fw fa-tablet-alt"></i>
+                        </label>
+                        Digital</li>
+                    <li class="items">
+                        <label>
+                            <i class="fas fa-fw fa-user-tag"></i>
+                        </label>
+                        Personal Loans</li>
+                    <li class="items">
+                        <label>
+                            <i class="fas fa-fw fa-tags"></i>
+                        </label>New releases</li>
+                    <li class="subtitle">YOUR BOOKS</li>
+                    <li class="items">
+                        <label>
+                            <i class="fas fa-book-open"></i>
+                        </label>
+                        Readings</li>
+                    <li class="items">
+                        <label>
+                            <i class="fas fa-history"></i>
+                        </label>History</li>
+                    <li class="items">
+                        <label>
+                            <i class="fas fa-bookmark"></i>
+                        </label> Later</li>
+                    <li class="items">
+                        <label>
+                            <i class="fas fa-heart"></i>
+                        </label>Favorites</li>
+                </ul>
+            </div>
+            <!--Left sidebar-->
+            <div id="bookshelf" class="col-lg-8 col-md-10 col-sm-12">
+                <!--Content container-->
+                <div class="row d-flex">
+                    <div id="topInfoContainer" class="class col-12">
+                        <div class="row d-flex">
+                            <div class="col-md-3 col-sm-3 test">
+                                <p id="new">New Releases</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3 test">
+                                <p id="date">Release Date</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3 test">
+                                <p id="popularity">Popularity</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3 test">
+                                <i id="icon1" class="fas fa-th-large"></i>
+                                <i id="icon2" class="fas fa-th-list "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex col-12 books container">
+                    <div class="bookContainer col-lg-2 col-sm-2 container first">
+                        <div class="row">
+                            <div class="col-lg-12 bookImage">
+                                <div class="cover onClickTextOverImage myCover"
+                                    style="background-image: url(assets/img/book2.jpg)">
+                                    <div class="back">
+                                        <div>
+                                            <img onclick="stopPropagation(event)" class="heart"
+                                                src="assets/img/heart.png">
+                                            <img class="bookMark" src="assets/img/bookmark.png">
+                                            <img class="bookOpen" src="assets/img/book-open.png">
+                                        </div>
+                                        <p class="rating">RATE THIS BOOK</p>
+                                        <div class="ratingStars">
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="far fa-fw fa-star stars"></i>
+                                        </div>
+                                        <i class="fas fa-caret-left arrow"></i>
+                                        <div class="bookCompleteInfo">
+                                            <p class="titleC" style="margin:1% 0;">THE GIRL ON THE TRAIN</p>
+                                            <p class="authC" style="margin:1% 0;">Novel by<span id="color-word">
+                                                    Paula</span></p>
+                                            <p class="pagesC">395 pages</p>
+                                            <p class="itemTitle">SUMMARY</p>
+                                            <article style="margin:5% 0;">
+                                                A divorcee becomes entangled in a missing
+                                                persons investigation that promises to send
+                                                shockwaves throughout her life.
+                                            </article>
+                                            <p class="itemTitle" style="margin:1% 0;">RATING</p>
+                                            <div class="star-rating">
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="far fa-fw fa-star"></i>
+                                            </div>
+                                            <p style="margin:6% 0;"></p>
+                                            <p class="recommend" style="margin:1% 0;">RECOMMENDED BY</p>
+                                            <div class="recommended">
+                                                <img src="assets/img/user3.png">
+                                                <img src="assets/img/user2.png">
+                                                <img src="assets/img/user.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container bookInfo">
+                                <h6 class="title">The girl on the...</h6>
+                                <p class="auth" style="margin:-2.5% 0;">Paula Hawkins</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookContainer col-lg-2 col-sm-2 container">
+                        <div class="row">
+                            <div class="col-lg-12 bookImage">
+                                <div class="cover onClickTextOverImage myCover"
+                                    style="background-image: url(assets/img/book12.jpg)">
+                                    <div class="back">
+                                        <div>
+                                            <img onclick="stopPropagation(event)" class="heart"
+                                                src="assets/img/heart.png">
+                                            <img class="bookMark" src="assets/img/bookmark.png">
+                                            <img class="bookOpen" src="assets/img/book-open.png">
+                                        </div>
+                                        <p class="rating">RATE THIS BOOK</p>
+                                        <div class="ratingStars">
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="far fa-fw fa-star stars"></i>
+                                            <i class="far fa-fw fa-star stars"></i>
+                                        </div>
+                                        <i class="fas fa-caret-left arrow"></i>
+                                        <div class="bookCompleteInfo">
+                                            <p class="titleC" style="margin:1% 0;">AFTER THE FLOOD</p>
+                                            <p class="authC" style="margin:1% 0;">Novel by<span id="color-word">
+                                                    Kassandra</span></p>
+                                            <p class="pagesC" style="margin:2% 0;">256 pages</p>
+                                            <p class="itemTitle" style="margin:0.2% 0;">SUMMARY</p>
+                                            <article style="margin:4% 0;">
+                                                An unforgettable, inventive epic saga about a mother,
+                                                her daughters and their struggle to survive
+                                                in a post-apocalyptic flooded world.
+                                            </article>
+                                            <p class="itemTitle" style="margin:1% 0;">RATING</p>
+                                            <div class="star-rating">
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="far fa-fw fa-star"></i>
+                                                <i class="far fa-fw fa-star"></i>
+                                            </div>
+                                            <p style="margin:6% 0;"></p>
+                                            <p class="recommend" style="margin:1% 0;">RECOMMENDED BY</p>
+                                            <div class="recommended">
+                                                <img src="assets/img/user3.png">
+                                                <img src="assets/img/user2.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container bookInfo">
+                                <h6 class="title">After the flood</h6>
+                                <p class="auth" style="margin:-2.5% 0;">Kassandra Montag</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookContainer col-lg-2 col-sm-2 container">
+                        <div class="row">
+                            <div class="col-lg-12 bookImage">
+                                <div class="cover onClickTextOverImage myCover"
+                                    style="background-image: url(assets/img/book8.jpg)">
+                                    <div class="back">
+                                        <div>
+                                            <img onclick="stopPropagation(event)" class="heart"
+                                                src="assets/img/heart.png">
+                                            <img class="bookMark" src="assets/img/bookmark.png">
+                                            <img class="bookOpen" src="assets/img/book-open.png">
+                                        </div>
+                                        <p class="rating">RATE THIS BOOK</p>
+                                        <div class="ratingStars">
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="far fa-fw fa-star stars"></i>
+                                            <i class="far fa-fw fa-star stars"></i>
+                                            <i class="far fa-fw fa-star stars"></i>
+                                        </div>
+                                        <i class="fas fa-caret-left arrow"></i>
+                                        <div class="bookCompleteInfo firstMiddle">
+                                            <p class="titleC" style="margin:1% 0;">THE VINE WITCH</p>
+                                            <p class="authC" style="margin:1% 0;">Novel by<span id="color-word">
+                                                    Launne</span></p>
+                                            <p class="pagesC" style="margin:2% 0;">268 pages</p>
+                                            <p class="itemTitle" style="margin:0.2% 0;">SUMMARY</p>
+                                            <article style="margin:4% 0;">
+                                                A young witch emerges from
+                                                a curse to find her world upended
+                                                in this gripping fantasy of betrayal, vengeance,
+                                                and self-discovery set in turn-of-the-century France.
+                                            </article>
+                                            <p class="itemTitle" style="margin:1% 0;">RATING</p>
+                                            <div class="star-rating">
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="far fa-fw fa-star"></i>
+                                                <i class="far fa-fw fa-star"></i>
+                                                <i class="far fa-fw fa-star"></i>
+                                            </div>
+                                            <p style="margin:6% 0;"></p>
+                                            <p class="recommend" style="margin:1% 0;">RECOMMENDED BY</p>
+                                            <div class="recommended">
+                                                <img src="assets/img/user3.png">
+                                                <img src="assets/img/user2.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container bookInfo">
+                                <h6 class="title">The vine witch</h6>
+                                <p class="auth" style="margin:-2.5% 0;">Launne G. Smith</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookContainer col-lg-2 col-sm-2 container">
+                        <div class="row">
+                            <div class="col-lg-12 bookImage">
+                                <div class="cover onClickTextOverImage myCover"
+                                    style="background-image: url(assets/img/book7.jpg)">
+                                    <div class="back">
+                                        <div>
+                                            <img onclick="stopPropagation(event)" class="heart"
+                                                src="assets/img/heart.png">
+                                            <img class="bookMark" src="assets/img/bookmark.png">
+                                            <img class="bookOpen" src="assets/img/book-open.png">
+                                        </div>
+                                        <p class="rating">RATE THIS BOOK</p>
+                                        <div class="ratingStars">
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="far fa-fw fa-star stars"></i>
+                                            <i class="far fa-fw fa-star stars"></i>
+                                        </div>
+                                        <i class="fas fa-caret-right arrow2"></i>
+                                        <i class="fas fa-caret-down arrow3"></i>
+                                        <div class="bookCompleteInfo lastBooks">
+                                            <p class="titleC" style="margin:1% 0;">METHOD 15/33</p>
+                                            <p class="authC" style="margin:1% 0;">Novel by<span id="color-word">
+                                                    Shannon</span></p>
+                                            <p class="pagesC" style="margin:2% 0;">226 pages</p>
+                                            <p class="itemTitle" style="margin:0.2% 0;">SUMMARY</p>
+                                            <article style="margin:4% 0;">
+                                                Imagine a helpless,
+                                                pregnant 16-year-old who's just
+                                                been yanked from the serenity of her
+                                                home and shoved into a dirty van.
+                                                Kidnapped. Alone. Terrified.
+                                            </article>
+                                            <p class="itemTitle" style="margin:1% 0;">RATING</p>
+                                            <div class="star-rating">
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="far fa-fw fa-star"></i>
+                                                <i class="far fa-fw fa-star"></i>
+                                            </div>
+                                            <p style="margin:6% 0;"></p>
+                                            <p class="recommend" style="margin:1% 0;">RECOMMENDED BY</p>
+                                            <div class="recommended">
+                                                <img src="assets/img/user3.png">
+                                                <img src="assets/img/user.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container bookInfo">
+                                <h6 class="title">Method 15/33</h6>
+                                <p class="auth" style="margin:-2.5% 0;">Shannon Kirk</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookContainer col-lg-2 col-sm-2 last">
+                        <div class="row">
+                            <div class="col-lg-12 bookImage">
+                                <div class="cover onClickTextOverImage myCover"
+                                    style="background-image: url(assets/img/book10.jpg)">
+                                    <div class="back">
+                                        <div>
+                                            <img onclick="stopPropagation(event)" class="heart"
+                                                src="assets/img/heart.png">
+                                            <img class="bookMark" src="assets/img/bookmark.png">
+                                            <img class="bookOpen" src="assets/img/book-open.png">
+                                        </div>
+                                        <p class="rating">RATE THIS BOOK</p>
+                                        <div class="ratingStars">
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="far fa-fw fa-star stars"></i>
+                                        </div>
+                                        <i class="fas fa-caret-right arrow2"></i>
+                                        <div class="bookCompleteInfo lastBooks">
+                                            <p class="titleC" style="margin:1% 0;">WHAT HAVE YOU DONE</p>
+                                            <p class="authC" style="margin:1% 0;">Novel by<span id="color-word">
+                                                    Matthew</span></p>
+                                            <p class="pagesC" style="margin:2% 0;">312 pages</p>
+                                            <p class="itemTitle" style="margin:0% 0;">SUMMARY</p>
+                                            <article style="margin:2% 0;">
+                                                When a mutilated body is found
+                                                hanging in a seedy motel,
+                                                forensics specialist Liam assumes the
+                                                crime scene will be business as usual. Instead,
+                                                the victim turns out to be a woman he’d had an
+                                                affair with before breaking it off to save his marriage.
+                                            </article>
+                                            <p class="itemTitle" style="margin:1% 0;">RATING</p>
+                                            <div class="star-rating">
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="far fa-fw fa-star"></i>
+                                            </div>
+                                            <p style="margin:1% 0;"></p>
+                                            <p class="recommend" style="margin:0.5% 0;">RECOMMENDED BY</p>
+                                            <div class="recommended">
+                                                <img src="assets/img/user3.png">
+                                                <img src="assets/img/user.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container bookInfo">
+                                <h6 class="title">What have you...</h6>
+                                <p class="auth" style="margin:-2.5% 0;">Matthew Farrell</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex col-12 books container">
+                    <div class="bookContainer col-lg-2 col-sm-2 container first">
+                        <div class="row">
+                            <div class="col-lg-12 bookImage">
+                                <div class="cover onClickTextOverImage myCover"
+                                    style="background-image: url(assets/img/book6.jpg)">
+                                    <div class="back">
+                                        <div>
+                                            <img onclick="stopPropagation(event)" class="heart"
+                                                src="assets/img/heart.png">
+                                            <img class="bookMark" src="assets/img/bookmark.png">
+                                            <img class="bookOpen" src="assets/img/book-open.png">
+                                        </div>
+                                        <p class="rating">RATE THIS BOOK</p>
+                                        <div class="ratingStars">
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="far fa-fw fa-star stars"></i>
+                                            <i class="far fa-fw fa-star stars"></i>
+                                            <i class="far fa-fw fa-star stars"></i>
+                                        </div>
+                                        <i class="fas fa-caret-left arrow"></i>
+                                        <div class="bookCompleteInfo second">
+                                            <p class="titleC" style="margin:1% 0;">THE ONLY PLANE IN THE SKY</p>
+                                            <p class="authC" style="margin:1% 0;">Novel by<span id="color-word">
+                                                    Garret</span></p>
+                                            <p class="pagesC" style="margin:2% 0;">483 pages</p>
+                                            <p class="itemTitle" style="margin:0.2% 0;">SUMMARY</p>
+                                            <article style="margin:2% 0;">
+                                                A panoramic oral history of
+                                                the September 11 attacks draws
+                                                on hundreds of interviews with government
+                                                officials, first responders, survivors
+                                                to recount events from the
+                                                perspectives of firsthand witnesses.
+                                            </article>
+                                            <p class="itemTitle" style="margin:1% 0;">RATING</p>
+                                            <div class="star-rating">
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="far fa-fw fa-star"></i>
+                                                <i class="far fa-fw fa-star"></i>
+                                                <i class="far fa-fw fa-star"></i>
+                                            </div>
+                                            <p style="margin:6% 0;"></p>
+                                            <p class="recommend" style="margin:1% 0;">RECOMMENDED BY</p>
+                                            <div class="recommended">
+                                                <img src="assets/img/user.png">
+                                                <img src="assets/img/user3.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container bookInfo">
+                                <h6 class="title">The only plane in...</h6>
+                                <p class="auth" style="margin:-2.5% 0;">Garret Graff</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookContainer col-lg-2 col-sm-2 container">
+                        <div class="row">
+                            <div class="col-lg-12 bookImage">
+                                <div class="cover onClickTextOverImage myCover"
+                                    style="background-image: url(assets/img/book9.jpg)">
+                                    <div class="back">
+                                        <div>
+                                            <img onclick="stopPropagation(event)" class="heart"
+                                                src="assets/img/heart.png">
+                                            <img class="bookMark" src="assets/img/bookmark.png">
+                                            <img class="bookOpen" src="assets/img/book-open.png">
+                                        </div>
+                                        <p class="rating">RATE THIS BOOK</p>
+                                        <div class="ratingStars">
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="far fa-fw fa-star stars"></i>
+                                        </div>
+                                        <i class="fas fa-caret-left arrow"></i>
+                                        <div class="bookCompleteInfo second">
+                                            <p class="titleC" style="margin:1% 0;">THE PERFECT CHILD</p>
+                                            <p class="authC" style="margin:1% 0;">Novel by<span id="color-word">
+                                                    Lucinda</span></p>
+                                            <p class="pagesC" style="margin:2% 0;">370 pages</p>
+                                            <p class="itemTitle" style="margin:0.2% 0;">SUMMARY</p>
+                                            <article style="margin:2% 0;">
+                                                A page-turning debut of suspense
+                                                about a young couple desperate to
+                                                have a child of their own—and the
+                                                unsettling consequences of getting
+                                                what they always wanted.
+                                            </article>
+                                            <p class="itemTitle" style="margin:1% 0;">RATING</p>
+                                            <div class="star-rating">
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="far fa-fw fa-star"></i>
+                                            </div>
+                                            <p style="margin:6% 0;"></p>
+                                            <p class="recommend" style="margin:1% 0;">RECOMMENDED BY</p>
+                                            <div class="recommended">
+                                                <img src="assets/img/user3.png">
+                                                <img src="assets/img/user.png">
+                                                <img src="assets/img/user2.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container bookInfo">
+                                <h6 class="title">The perfect...</h6>
+                                <p class="auth" style="margin:-2.5% 0;">Lucinda Berry</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookContainer col-lg-2 col-sm-2 container">
+                        <div class="row">
+                            <div class="col-lg-12 bookImage">
+                                <div class="cover onClickTextOverImage myCover"
+                                    style="background-image: url(assets/img/book11.jpg)">
+                                    <div class="back">
+                                        <div>
+                                            <img onclick="stopPropagation(event)" class="heart"
+                                                src="assets/img/heart.png">
+                                            <img class="bookMark" src="assets/img/bookmark.png">
+                                            <img class="bookOpen" src="assets/img/book-open.png">
+                                        </div>
+                                        <p class="rating">RATE THIS BOOK</p>
+                                        <div class="ratingStars">
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                        </div>
+                                        <i class="fas fa-caret-left arrow"></i>
+                                        <div class="bookCompleteInfo second firstMiddle">
+                                            <p class="titleC" style="margin:1% 0;">STRANGER THINGS</p>
+                                            <p class="authC" style="margin:1% 0;">Novel by<span id="color-word">
+                                                    Gwenda</span></p>
+                                            <p class="pagesC" style="margin:2% 0;">414 pages</p>
+                                            <p class="itemTitle" style="margin:0.2% 0;">SUMMARY</p>
+                                            <article style="margin:2% 0;">
+                                                A secret history.
+                                                If you think you know the
+                                                truth behind Eleven’s mother,
+                                                prepare to have your mind turned
+                                                Upside Down in this thrilling
+                                                prequel to the hit show Stranger Things.
+                                            </article>
+                                            <p class="itemTitle" style="margin:1% 0;">RATING</p>
+                                            <div class="star-rating">
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                            </div>
+                                            <p style="margin:6% 0;"></p>
+                                            <p class="recommend" style="margin:1% 0;">RECOMMENDED BY</p>
+                                            <div class="recommended">
+                                                <img src="assets/img/user2.png">
+                                                <img src="assets/img/user3.png">
+                                                <img src="assets/img/user.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container bookInfo">
+                                <h6 class="title">Stranger things</h6>
+                                <p class="auth" style="margin:-2.5% 0;">Gwenda Bond</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookContainer col-lg-2 col-sm-2 container">
+                        <div class="row">
+                            <div class="col-lg-12 bookImage">
+                                <div class="cover onClickTextOverImage myCover"
+                                    style="background-image: url(assets/img/book14.jpg)">
+                                    <div class="back">
+                                        <div>
+                                            <img onclick="stopPropagation(event)" class="heart"
+                                                src="assets/img/heart.png">
+                                            <img class="bookMark" src="assets/img/bookmark.png">
+                                            <img class="bookOpen" src="assets/img/book-open.png">
+                                        </div>
+                                        <p class="rating">RATE THIS BOOK</p>
+                                        <div class="ratingStars">
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="far fa-fw fa-star stars"></i>
+                                            <i class="far fa-fw fa-star stars"></i>
+                                            <i class="far fa-fw fa-star stars"></i>
+                                        </div>
+                                        <i class="fas fa-caret-right arrow2"></i>
+                                        <div class="bookCompleteInfo second lastBooks">
+                                            <p class="titleC" style="margin:1% 0;">THE LAST TRAIN TO LONDON</p>
+                                            <p class="authC" style="margin:1% 0;">Novel by<span id="color-word">
+                                                    Meg</span></p>
+                                            <p class="pagesC" style="margin:2% 0;">464 pages</p>
+                                            <p class="itemTitle" style="margin:0.2% 0;">SUMMARY</p>
+                                            <article style="margin:2% 0;">
+                                                An Orphan Train,
+                                                centering on the Kindertransports that
+                                                carried thousands of children out of
+                                                Nazi-occupied Europe—and one brave
+                                                woman who helped them escape to safety.
+                                            </article>
+                                            <p class="itemTitle" style="margin:1% 0;">RATING</p>
+                                            <div class="star-rating">
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="far fa-fw fa-star"></i>
+                                                <i class="far fa-fw fa-star"></i>
+                                                <i class="far fa-fw fa-star"></i>
+                                            </div>
+                                            <p style="margin:6% 0;"></p>
+                                            <p class="recommend" style="margin:1% 0;">RECOMMENDED BY</p>
+                                            <div class="recommended">
+                                                <img src="assets/img/user2.png">
+                                                <img src="assets/img/user3.png">
+                                                <img src="assets/img/user.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container bookInfo">
+                                <h6 class="title">The last train...</h6>
+                                <p class="auth" style="margin:-2.5% 0;">Meg Waite Clayton</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookContainer col-lg-2 col-sm-2 last">
+                        <div class="row">
+                            <div class="col-lg-12 bookImage">
+                                <div class="cover onClickTextOverImage myCover"
+                                    style="background-image: url(assets/img/book1.jpg)">
+                                    <div class="back">
+                                        <div>
+                                            <img onclick="stopPropagation(event)" class="heart"
+                                                src="assets/img/heart.png">
+                                            <img class="bookMark" src="assets/img/bookmark.png">
+                                            <img class="bookOpen" src="assets/img/book-open.png">
+                                        </div>
+                                        <p class="rating">RATE THIS BOOK</p>
+                                        <div class="ratingStars">
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="fa fa-fw fa-star stars"></i>
+                                            <i class="far fa-fw fa-star stars"></i>
+                                        </div>
+                                        <i class="fas fa-caret-right arrow2"></i>
+                                        <div class="bookCompleteInfo second lastBooks">
+                                            <p class="titleC" style="margin:1% 0;">THE INSTITUTE</p>
+                                            <p class="authC" style="margin:1% 0;">Novel by<span id="color-word">
+                                                    Stephen</span></p>
+                                            <p class="pagesC" style="margin:2% 0;">561 pages</p>
+                                            <p class="itemTitle" style="margin:0.2% 0;">SUMMARY</p>
+                                            <article style="margin:2% 0;">
+                                                In the middle of the night,
+                                                in a house on a quiet street
+                                                in suburban Minneapolis,
+                                                intruders silently murder
+                                                Luke Ellis’s parents and load
+                                                him into a black SUV.
+                                                The operation takes less than two minutes.
+                                            </article>
+                                            <p class="itemTitle" style="margin:1% 0;">RATING</p>
+                                            <div class="star-rating">
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="fa fa-fw fa-star"></i>
+                                                <i class="far fa-fw fa-star"></i>
+                                            </div>
+                                            <p style="margin:6% 0;"></p>
+                                            <p class="recommend" style="margin:1% 0;">RECOMMENDED BY</p>
+                                            <div class="recommended">
+                                                <img src="assets/img/user.png">
+                                                <img src="assets/img/user3.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container bookInfo">
+                                <h6 class="title">The institute</h6>
+                                <p class="auth" style="margin:-2.5% 0;">Stephen King</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--bookshelf container-->
+            <div id="sidebarR" class="col-lg-2 d-flex float-left side">
+                <!--Right sidebar-->
+                <ul>
+                    <!--Elements list of right sidebar-->
+                    <li id="list">MOST READ BOOKS</li>
+                    <li class="info">1.Hooked: How to Build Habit-...</li>
+                    <li class="info">2.The Inevitable: Understandin...</li>
+                    <li class="info">3.Lean In: Women, Work and t...</li>
+                    <li class="info">4.Building a Business When Th...</li>
+                    <li class="info">5.How Google Works</li>
+                </ul>
+                <!--Right sidebar-->
+            </div>
+        </div>
+        <!--Row-->
+    </div>
+    <!--Container fluid-->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

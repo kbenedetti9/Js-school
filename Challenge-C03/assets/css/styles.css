@@ -1,0 +1,712 @@
+#myContainer{/*Principal container of everything*/
+    margin:0;
+    padding: 0;
+} 
+
+.row{/*Rows*/
+    margin:0;
+    padding: 0;
+} 
+
+#principal{/*Principal container for navigation bar*/
+    /*border: solid 1px green;/*Probar*/
+    padding: 0;
+    margin:0;
+    border-bottom: solid 1px #6EC1E4;
+}
+
+/*LOGO STYLES*/
+#logoContainer{/*Logo container*/
+    background: white;
+    height: 60px;
+    padding: 0;
+}
+
+#logo{/*Company logo*/
+    margin-left: 20px;
+    margin-bottom:10px;
+}
+
+#name{/*Company name*/
+   margin-top: 10px;
+   margin-left:5px;
+   color:black;
+   font-weight: 800;
+   font-size:22px;
+}
+
+#container{/*Navbar objects container*/
+    height: 60px;   
+    background: #FCF8F3;
+    border-radius: 0px 0px 0px 0px;
+    padding: 0;/*Prueba busqueda*/
+}
+
+#descrip{/*Bookshelf description*/
+    margin-top:15px;
+    color:black;
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+/*-Disappearing columns between descrip-search and separating line-*/
+@media (max-width: 1100px) {
+    #space,.vl{
+        display: none;
+    }
+}
+
+/*-Disappearing descrip-*/
+@media (max-width: 1000px) {
+    #descrip{
+        display: none;
+    }
+}
+
+/*SEARCH STYLES*/
+
+#form{/*Search form*/
+    margin-top:15px;
+}
+
+#searchContainer{/*Search container*/
+    background: rgba(245, 246, 248, 0.51186);
+    border: 1px solid #6EC1E4;
+    border-radius: 21px 16px 16px 16px;
+    margin-top:-5px;
+}
+
+#lens{/*Lens icon*/
+    color:black;
+    margin-left:10px;
+}
+
+#search-field{/*Search input*/
+    background: rgba(245, 246, 248, 0.51186);
+    font-family: Pluto Sans;
+    font-size: 14px;
+    line-height: 17px;   
+    border-radius: 21px 16px 16px 16px;
+    border:rgba(245, 246, 248, 0.51186);
+}
+
+#search-field::placeholder{
+    color: black;
+    font-size: 14px;
+}
+
+.vl {/*Separating line*/
+    border: 0.8px solid #979797;
+    background:#979797;
+    height:40px;
+    margin-top:10px;
+    position: absolute;
+    left: 80%;
+}
+
+#options{/*Login button options*/
+    color:black;
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-left:65px;
+}
+
+#login{/*Login button*/
+    margin-top:25px;
+}
+
+/*USER IMAGE STYLES*/
+#imageContainer{/*Container for user image*/
+    margin-top:-8px;
+}
+
+#image{/*User image*/
+    border-color: #6EC1E4;
+    border-style: solid;
+    border-radius: 50%;
+    margin-top:15px;
+    margin-left:15px;
+}
+
+/*LEFT SIDEBAR STYLES*/
+
+.side{/*Left and right sidebar*/
+    border:solid 1px black;
+    background: #231F20;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.subtitle{/*Left sidebar subtitles*/
+    margin-top:30px;
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-align: left;
+    list-style: none;
+}
+
+.items{/*Left sidebar items*/
+    margin-top:12px;
+    list-style: none;
+    color: #6EC1E4;
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: 380;
+    font-size: 11px;
+}
+
+li i{/*i from li elements of left sidebar*/
+   margin-right:15px;
+}
+
+#bookshelf{/*Bookshlef container*/
+    padding:0;
+}
+
+/*TOP INFORMATION STYLES*/
+.test{/*Top information columns*/
+    height: 40px;
+}
+#new{/*New releases space*/
+    margin-top:10px; 
+    margin-left:30%;
+    font-family: Pluto Sans;
+    font-weight: 390;
+    font-size: 14px;
+}
+
+#date{/*Releases date space*/
+    margin-left:70px;
+    margin-top:10px;
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #979797;
+}
+
+.l {/*Separating line*/
+    border: 0.8px solid rgba(151, 151, 151, 0.786628);
+    background: rgba(151, 151, 151, 0.786628);
+    height:15px;
+    margin-top:22px;
+    position: absolute;
+    left: 50%;
+}
+
+#popularity{/*Popularity space*/
+    margin-left:4px;
+    margin-top:10px;
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #858585;
+}
+
+#icon1{/*Icon space*/
+    margin-top:10px;
+    margin-left:90px;
+    color: #6EC1E4;
+}
+
+#icon2{/*Icon space*/
+    color: #6EC1E4;
+} 
+
+#topInfoContainer{/*Top information container*/
+    height: 40px;
+    padding: 0px;
+}
+
+/*BOOKS STYLES*/
+.books{/*Book row*/
+    height: 254px;
+}
+
+.cover{/*Cover of the book*/
+    width:100px;
+    height: 150px;
+    margin-left:20px;
+} 
+
+.first{/*Fist book*/
+     margin-left:68px;
+}
+
+.last{/*Last book*/
+    margin-right:68px;
+}
+
+.title{/*Book title*/
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    color: #383838;
+}
+
+.auth{/*Book author*/
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    color: #9E9E9E;
+}
+
+.fa-star{/*Book rating*/
+    font-size: 10px;
+    color: #6EC1E4;
+}
+
+.bookContainer{/*Book container*/
+    height: 251px;
+    padding: 0;
+}
+
+.bookImage{/*Book image space*/
+    height: 160px;
+    padding: 0;
+}
+
+/*RIGHT SIDEBAR STYLES*/
+
+.info{/*Right sidebar information*/
+    margin-top:20px;
+    text-align: left;
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    color: #FCF8F3;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    list-style: none;
+}
+
+#list{/*Title of right sidebar*/
+    margin-top:20px;
+    list-style: none;
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    color: #FCF8F3;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
+/*HOVER*/
+
+/*Giving color when hover in left sidebar items*/
+.items:hover{
+    color:white;
+}
+/*Giving shadow when hover in a book*/
+.cover:hover{
+    -webkit-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.94);
+    -moz-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.94);
+    box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.94);
+}
+/*Giving color when hover in the icons*/
+#icon1:hover,#icon2:hover{
+    color:darkgray;
+}
+
+/*@media screen and (max-width: 800px) {
+    .column {
+        margin-left:0px;
+        width: 10%;
+        display: block;
+    }
+  }
+
+  .first{
+      margin-left:0px;
+  }
+  .column {
+    float: left;
+    width: 20%;
+  }*/
+
+/*-Disappearing user image and reorganizing content-*/
+@media (max-width: 768px) { 
+    #imageContainer{
+        display: none;
+    }
+    #login{
+        margin-top:10px;
+    }
+    #options{
+        margin-left:39%;
+    }
+    #container{
+        height:100px;
+    }
+    #searchContainer{
+        margin-left:5%;
+    }
+    
+    #new,#date,#popularity,#icon1{
+        margin-left:5%;
+    }
+}
+/*Positionig search field in the center*/
+@media (max-width: 568px) {
+    #searchContainer{
+        margin-left:25%;
+    }
+}
+/*Positioning top information elements*/
+@media (min-width:768px) and (max-width:950px){
+    #new,#date,#popularity,#icon1{
+        margin-left:5%;
+    }
+}
+/*Positioning top information elements*/
+@media (min-width:991px) and (max-width:1189px){
+    #new,#date,#popularity,#icon1{
+        margin-left:2%;
+    }
+}
+/*Positioning image container to the right side*/
+@media (min-width:768px) and (max-width:1101px){
+    #imageContainer{
+        margin-left: 5%;
+    }
+
+}
+/*Disappearing top information*/
+@media (max-width: 578px){
+    #topInfoContainer{
+        display:none;
+    }
+}
+/*Giving size to books container*/
+@media (max-width:1234px){
+    .first{
+        margin-left: 0px;
+    }
+    .last{
+        margin-right: 0px;
+    }
+    .cover{
+        margin-left:0px;
+    }
+}
+/*Resizing bookshelf ands books rows*/
+@media (max-width:575px){
+    #bookshelf{
+        height: 3000px;
+    }
+    
+    .books{
+        height: 1500px;
+    }
+
+    .bookImage{
+        margin-left:40%;
+    }
+
+    .bookInfo{
+        margin-left:40%;
+    }
+}
+/*Resizing stars*/
+@media (min-width:576px) and (max-width:655px){
+    .fa-star{
+        margin-top:0px;
+        font-size:6px;
+    }
+}
+
+@media(min-width:768px) and (max-width:784px){
+    .fa-star{
+        margin-top:0px;
+        font-size:6px;
+    }
+}
+
+#myCover{/*Book cover*/
+    background-size: cover;
+}
+
+/*BOOK SELECTION*/
+
+/*How looks image when select it*/
+.onClickTextOverImage{
+    background-size:cover;
+    display:inline-block;
+    box-shadow:0 0 16px rgba(0,0,0,0.5);
+    cursor:pointer;
+    position:relative;
+  }
+  
+.onClickTextOverImage .back{
+    position:absolute;
+    color:#fff;
+    padding:0px;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-color:rgba(0,0,0,0.8);
+    padding-top:35%;
+    text-align:center;
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+  }
+  
+.onClickTextOverImage.show .back{
+    opacity:1;
+    padding-top:0%;
+    visibility:visible;
+  }
+
+.heart{/*Heart icon for complete book information*/
+    position: absolute;
+    height: 16px;
+    left: 8%;
+    right: 26.67%;
+    top: calc(11% - 16px/2 + 2px);
+}
+
+.bookMark{/*book mark icon for complete book information*/
+    position: absolute;
+    height: 16px;
+    left: 75%;
+    right: 8%;
+    top: calc(11% - 16px/2 + 2px);
+}
+
+.bookOpen{/*Book open icon for complete book information*/
+    height:25px;
+    margin-top:60px;
+}
+
+.rating{/*Rating title for complete book information*/
+    margin-top:25px;
+    color: #FCF8F3;
+    font-size:8px;
+    font-family: Pluto Sans;
+    margin-bottom: 0px;
+}
+
+.ratingStars{/*Rating stars for complete book information*/
+    margin-top:0px;
+}
+
+.stars{/*Stars for complete book information*/
+    color: #E9BD49;
+    font-size: 8px;
+}
+
+/*BOOK SELECTION STYLES*/
+
+/*Arrow for complete book information*/
+.onClickTextOverImage .arrow{
+    visibility: hidden;
+    position: absolute;
+    top:1.5em;
+    left:3.05em;
+    font-size:35px;
+    color: rgba(35, 31, 32, 0.88);
+    opacity: 0;
+}
+.onClickTextOverImage.show .arrow{
+    opacity: 1;
+    visibility: visible;
+}
+/*Box for complete book information*/
+.onClickTextOverImage .bookCompleteInfo {
+    position: absolute;
+    z-index: 100;
+    width: 23em;
+    height: 22.375em;
+    background-color: rgba(35, 31, 32, 0.88);
+    border-radius: 1%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    top: 0;
+    left: 10em;
+    padding: 1em 2em;
+    text-align: left;
+    color: #fff;
+    font-size: 0.75em;
+}
+.onClickTextOverImage.show .bookCompleteInfo {
+    opacity: 1;
+    visibility: visible;
+}
+/*Box for second row of books for complete information*/
+.onClickTextOverImage .second {
+    position: absolute;
+    z-index: 100;
+    width: 23em;
+    height: 22.375em;
+    background-color: rgba(35, 31, 32, 0.88);
+    border-radius: 1%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    left: 10em;
+    top: -2em;
+    padding: 1em 2em;
+    text-align: left;
+    color: #fff;
+    font-size: 0.75em;
+}
+/*Box for the last books of the two rows*/
+.onClickTextOverImage .lastBooks {
+    position: absolute;
+    z-index: 100;
+    width: 23em;
+    height: 22.375em;
+    background-color: rgba(35, 31, 32, 0.88);
+    border-radius: 1%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    left:-25em;
+    padding: 1em 2em;
+    text-align: left;
+    color: #fff;
+    font-size: 0.75em;
+}
+/*Right arrow for the last books of the two rows*/
+.onClickTextOverImage .arrow2{
+    visibility: hidden;
+    position: absolute;
+    top:1.5em;
+    left:-0.7em;
+    font-size:35px;
+    color: rgba(35, 31, 32, 0.88);
+    opacity: 0;
+}
+.onClickTextOverImage .arrow2{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.titleC{/*Title of the book for complete book information*/
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;   
+    color: #5EB4DD;
+}
+
+.authC,.pagesC{ /*Author and pages from complete book information*/
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: 380;
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+.itemTitle{/*Summary and rating*/
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    color: #858585;
+}
+
+.recommend{/*Recommend by*/
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    color: #858585;
+}
+
+article{/*Book summary*/
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+/*Resizing complete information book box*/
+@media (max-width:575px){
+
+    .onClickTextOverImage .bookCompleteInfo {
+        position: absolute;
+        z-index: 100;
+        width: 205px;
+        height: 22.375em;
+        background-color: rgba(35, 31, 32, 0.88);
+        border-radius: 1%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        top: 0;
+        left: -4em;
+        padding: 1em 2em;
+        text-align: left;
+        color: #fff;
+        font-size: 0.75em;
+    }
+
+    .arrow,.arrow2{
+        visibility: hidden;
+    }
+    .recommended{
+        display:none;
+    }
+    .recommend{
+        visibility: hidden;
+    }
+    
+}
+/*Resizing complete information book box */
+@media (min-width:575px) and (max-width:852px){
+
+    .onClickTextOverImage .firstMiddle {
+        position: absolute;
+        z-index: 100;
+        width: 205px;
+        height: 22.375em;
+        background-color: rgba(35, 31, 32, 0.88);
+        border-radius: 1%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        top: 0;
+        left: -6em;
+        padding: 1em 2em;
+        text-align: left;
+        color: #fff;
+        font-size: 0.75em;
+    }
+
+    .arrow,.arrow2{
+        visibility: hidden;
+    }
+    .recommended{
+        display:none;
+    }
+    .recommend{
+        visibility: hidden;
+    }
+    
+}
+
+@media (min-width:768px) and (max-width:992){
+    #sidebarR{
+        width:100%;
+    }
+
+}
