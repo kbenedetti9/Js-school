@@ -1,7 +1,7 @@
 * {
   box-sizing:border-box;
 }
-  
+
 body {
   margin:0;
   padding: 0;
@@ -31,7 +31,6 @@ body {
   -webkit-box-shadow: 0px 0px 22px 5px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 22px 5px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 22px 5px rgba(0,0,0,0.75);
-  /* z-index:1; */
   height:300px;
   width:91.40px;
   border: solid 3px black;
@@ -93,49 +92,49 @@ body {
 
 /*ACTIVE KEYS STYLES*/
 
-.doActivo{/*Active DO keys*/
+.doActive{/*Active DO keys*/
   background-color: #AA00FF;
   margin-top: 5px;
   box-shadow: none;
 }
 
-.reActivo{/*Active RE keys*/
+.reActive{/*Active RE keys*/
   background-color: #6200EA;
   margin-top: 5px;
   box-shadow: none;
 }
 
-.miActivo{/*Active MI keys*/
+.miActive{/*Active MI keys*/
   background-color: #2962FF;
   margin-top: 5px;
   box-shadow: none;
 }
 
-.faActivo{/*Active FA keys*/
+.faActive{/*Active FA keys*/
 background-color: #2E7D32;
 margin-top: 5px;
 box-shadow: none;
 }
 
-.solActivo{/*Active SOL keys*/
+.solActive{/*Active SOL keys*/
   background-color: #FFD600;
   margin-top: 5px;
   box-shadow: none;
 }
   
-.laActivo{/*Active LA keys*/
+.laActive{/*Active LA keys*/
   background-color: #FF9100;
   margin-top: 5px;
   box-shadow: none;
 }
 
-.siActivo{/*Active SI keys*/
+.siActive{/*Active SI keys*/
   background-color: #F4511E;
   margin-top: 5px;
   box-shadow: none;
 }
 
-.blackActivo{/*Active black keys*/
+.blackActive{/*Active black keys*/
   box-shadow: none;
   margin-top: 5px;
 }
@@ -180,14 +179,14 @@ box-shadow: none;
 
 /*KEYBOARD REFERENCES STYLES*/
 
-.note{/*Keyboard reference*/
+.note{/*Keyboard references*/
   color: black;
   font-family: 'Baloo', cursive;
   font-weight: bold;
   font-size: 30px;
 }
 
-.circle {/*Circle around keyboard reference*/
+.whiteNote {/*Circle around keyboard references for white notes*/
   width: 50px;
   height: 50px;
   -moz-border-radius: 50%;
@@ -195,6 +194,8 @@ box-shadow: none;
   border-radius: 50%;
   float:left;
 }
+
+/*CIRCLES AND LABES STYLES*/
 
 #noteDo{
   position: absolute;
@@ -393,14 +394,16 @@ box-shadow: none;
   top: 0px;
 }
 
-.noteL{
+/*KEYBOARD REFERENCES STYLES FOR SHARP KEYS*/
+
+.noteS{
   color: black;
   font-family: 'Baloo', cursive;
   font-weight: bold;
   font-size: 15px;
 }
 
-.circleL {
+.sharpNote {
   width: 30px;
   height: 30px;
   -moz-border-radius: 50%;
@@ -408,6 +411,8 @@ box-shadow: none;
   border-radius: 50%;
   float:left;
 }
+
+/*CIRCLES AND LABELS STYLES FOR SHARP KEYS*/
 
 #noteDoS{
   position: absolute;
@@ -560,11 +565,12 @@ color:#9CCC65;
 }   
 
 #myKey{
-  /* border:solid 3px red; */
   width:1260px;
   height:110px;
   margin-top:10px;
 }
+
+/*WHERE THE NOTE IS GOING TO BE SHOW STYLES*/
 
 #myNote{
   text-align: center;
@@ -627,7 +633,6 @@ color:#9CCC65;
   height:5px;
   border:solid 1px #FFB74D;
   border-radius: 0 3px 3px 0;
-
 }
 
 #orange{
@@ -708,3 +713,28 @@ color:#9CCC65;
   border:solid 1px #FF7043;
   border-radius: 3px 0 0 3px;
 }
+
+/*ROTATE MESSAGE STYLE*/
+
+#rotatemsg{
+  visibility: hidden;
+  border-radius: 6px 6px 6px 6px;
+  background: rgba(255,255,255,0.8);
+  color:black;
+  font-size: 28px;
+  font-family:'Baloo', cursive;
+  height:60px;
+  width:700px;
+  text-align: center;
+  margin-top:20px;
+}
+
+/*Showing rotate msg in portrait orientation*/
+@media (max-width:1000px) and (orientation: portrait){
+  #rotatemsg{
+    visibility: visible;
+   position: absolute;
+   top:60%;
+   left:30%;
+  }
+} 
