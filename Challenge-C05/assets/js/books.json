@@ -1,0 +1,93 @@
+{
+  "books": [
+    {
+      "title": "The Greatest Adventure (Spanish)",
+      "author": [
+        "Tony Piedra"
+      ],
+      "pages": 40,
+      "description": "Where does true adventure come from? A young Latino boy and his grandfather find the true answer together.",
+      "image": "http://books.google.com/books/content?id=_zOJDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+      "title": "Adventure in Istanbul",
+      "author": [
+        "Cora Taylor"
+      ],
+      "pages": 257,
+      "description": "Thirteen-year-old twins, one of whom has discovered a magic spell that makes her invisible, are on a Greek cruise with their grandmother, battling spies and trying to rescue their father.",
+      "image": "http://books.google.com/books/content?id=sZTD_z3HOJ0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+      "title": "Adventure, Mystery, and Romance",
+      "author": [
+        "John G. Cawelti"
+      ],
+      "pages": 344,
+      "description": "In this first general theory for the analysis of popular literary formulas, John G. Cawelti reveals the artistry that underlies the best in formulaic literature. Cawelti discusses such seemingly diverse works as Mario Puzo's The Godfather, Dorothy Sayers's The Nine Tailors, and Owen Wister's The Virginian in the light of his hypotheses about the cultural function of formula literature. He describes the most important artistic characteristics of popular formula stories and the differences between this literature and that commonly labeled \"high\" or \"serious\" literature. He also defines the archetypal patterns of adventure, mystery, romance, melodrama, and fantasy, and offers a tentative account of their basis in human psychology.",
+      "image": "http://books.google.com/books/content?id=vnXRAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+      "title": "A Canadian Wilderness Fishing Adventure",
+      "author": [
+        "Bob Simpson"
+      ],
+      "rating": 5,
+      "pages": 89,
+      "description": "Feel the salty ocean spray in your face and the reel nearly jump out of your hands as you join in this adventure of a father and his two sons in the wilds of British Columbia for A Canadian Wilderness Fishing Adventure. Confronted with the fact that his teenage sons were growing up, Bob Simpson decided that the Simpson men needed one more great adventure. A previous trip to Cabo San Lucas had provided great adventure, but had left a feeling of 'unfinished business' within the family. With the anticipation of great sportsmen and the warmth of family, the Simpsons embarked on an unforgettable journey. Come share in the adventures and the fish tales of a father bonding with his sons.",
+      "image": "http://books.google.com/books/content?id=IkasTfY0Vb4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+      "title": "Adventure Tourism",
+      "author": [
+        "R. Buckley"
+      ],
+      "rating": 5,
+      "pages": 336,
+      "description": "Adventure tourism is a new, rapidly growing area at both practical and academic levels. Written at an introductory level, Adventure Tourism provides a basic background and covers commercial adventure tourism products across a range of adventure tourism sectors.",
+      "image": "http://books.google.com/books/content?id=UZpnOF0u_PgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+      "title": "South Carolina Adventure",
+      "image": "http://books.google.com/books/content?id=I5xmP9-PnmUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+      "title": "An A-maze-ing Zoo Adventure",
+      "author": [
+        "Jill Kalz",
+        "Mattia Cerato"
+      ],
+      "pages": 32,
+      "description": "Presents eleven zoo-themed mazes, inviting readers to spot hidden items in the pictures, learn map reading skills, and trace a way out of the maze with their fingers.",
+      "image": "http://books.google.com/books/content?id=_OtZWAjt9UwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+      "title": "Boston Jane: An Adventure",
+      "author": [
+        "Jennifer L. Holm"
+      ],
+      "rating": 4.5,
+      "pages": 272,
+      "description": "Fans of adventure, romance, and a strong heroine will love this this action-packed historical trilogy by three-time Newbery Honor winner and New York Times bestselling author Jennifer L. Holm. 1855. The unknown wilds of the Pacific Northwest—a land not yet tamed, and certainly not fitting for a proper young lady! Yet that’s just where Miss Jane Peck finds herself. After a tumultuous childhood on the wrong side of Philadelphia high society, Jane is trying to put aside her reckless ways and be accepted as a proper young lady. And so when handsome William Baldt proposes, she joyfully accepts and prepares to join him in a world away from her home in Washington Territory. But Miss Hepplewhite’ s straitlaced finishing school was hardly preparation for the treacherous months at sea it takes to get there, the haunting loss she’ll face on the way, or the colorful characters and crude life that await her on the frontier.",
+      "image": "http://books.google.com/books/content?id=Wj05-5KrAZoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+      "title": "Connie and Her Bubble Gum Adventure",
+      "author": [
+        "Edward Byers"
+      ],
+      "pages": 32,
+      "image": "http://books.google.com/books/content?id=edZ34bSg69wC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+      "title": "Brazilian Adventure",
+      "author": [
+        "Peter Fleming"
+      ],
+      "rating": 3.5,
+      "pages": 376,
+      "description": "In 1932 Peter Fleming, a literary editor, engaged to search for missing English explorer Colonel P.H. Fawcett, lost in tributary of the Amazon, with the hardships of meager supplies, faulty maps, and a pack of rival newspaper-men on their trail.",
+      "image": "http://books.google.com/books/content?id=CyAE9rDdy9IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  ]
+}

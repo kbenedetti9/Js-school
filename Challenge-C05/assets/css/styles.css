@@ -261,6 +261,12 @@ li i{/*i from li elements of left sidebar*/
     font-weight: 500;
     font-size: 11px;
     color: #383838;
+    height: 20px;
+    width: 120px;
+    margin:0;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
 }
 
 .auth{/*Book author*/
@@ -269,6 +275,11 @@ li i{/*i from li elements of left sidebar*/
     font-weight: 300;
     font-size: 11px;
     color: #9E9E9E;
+    height: 20px;
+    width: 120px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
 }
 
 .fa-star{/*Book rating*/
@@ -430,19 +441,19 @@ li i{/*i from li elements of left sidebar*/
     }
 }
 /*Resizing stars*/
-@media (min-width:576px) and (max-width:655px){
+/* @media (min-width:576px) and (max-width:655px){
     .fa-star{
         margin-top:0px;
         font-size:6px;
     }
-}
+} */
 
-@media(min-width:768px) and (max-width:784px){
+/* @media(min-width:768px) and (max-width:784px){
     .fa-star{
         margin-top:0px;
         font-size:6px;
     }
-}
+} */
 
 #myCover{/*Book cover*/
     background-size: cover;
@@ -644,8 +655,16 @@ article{/*Book summary*/
     font-family: Pluto Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 10px;
+    font-size: 9px;
     color: #FFFFFF;
+    margin:0;
+    height: 5em;
+    
+    white-space:nowrap; 
+    overflow: hidden;
+   
+    line-break: auto;
+    text-overflow: ellipsis;
 }
 
 /*Resizing complete information book box*/
@@ -718,4 +737,13 @@ article{/*Book summary*/
         width:100%;
     }
 
+}
+
+.libro{
+    width:6.25em;
+    height:9.36em;
+}
+
+.bookInfo{
+    height: 80px;
 }
