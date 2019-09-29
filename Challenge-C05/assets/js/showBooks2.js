@@ -19,8 +19,7 @@ function clickBook() {/*Function to show complete information when a book is cli
 var obj = {/*Object to obtain json information*/
     books: []
 };
-
-
+ 
 fetch("./assets/js/books.json")/*Fetch to obtain json of books information */
     .then((resp) => resp.json())
     .then(function (data) {
