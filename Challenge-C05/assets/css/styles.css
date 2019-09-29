@@ -1,4 +1,4 @@
-#myContainer{/*Principal container of everything*/
+#generalContainer{/*Principal container of everything*/
     margin:0;
     padding: 0;
 } 
@@ -8,8 +8,7 @@
     padding: 0;
 } 
 
-#principal{/*Principal container for navigation bar*/
-    /*border: solid 1px green;/*Probar*/
+#navContainer{/*Principal container for navigation bar*/
     padding: 0;
     margin:0;
     border-bottom: solid 1px #6EC1E4;
@@ -42,7 +41,7 @@
     height: 60px;   
     background: #FCF8F3;
     border-radius: 0px 0px 0px 0px;
-    padding: 0;/*Prueba busqueda*/
+    padding: 0;
 }
 
 #descrip{/*Bookshelf description*/
@@ -56,24 +55,18 @@
 
 /*-Disappearing columns between descrip-search and separating line-*/
 @media (max-width: 1100px) {
-    #space,.vl{
-        display: none;
-    }
-}
-
-/*-Disappearing descrip-*/
-@media (max-width: 1000px) {
     #descrip{
         display: none;
     }
-}
+    #space,.line{
+        display: none;
+    }
+} 
 
 /*SEARCH STYLES*/
 
 #form{/*Search form*/
-    margin-top:15px;
-    border: solid 1px red;
-    margin-left: 10px;
+    margin-top:15px;    
 }
 
 #searchContainer{/*Search container*/
@@ -81,6 +74,7 @@
     border: 1px solid #6EC1E4;
     border-radius: 21px 16px 16px 16px;
     margin-top:-5px;
+    margin-left: 50px;
 }
 
 #lens{/*Lens icon*/
@@ -102,7 +96,7 @@
     font-size: 14px;
 }
 
-.vl {/*Separating line*/
+.line {/*Separating line*/
     border: 0.8px solid #979797;
     background:#979797;
     height:40px;
@@ -117,19 +111,16 @@
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    margin-left:125px;
-    border: solid 3px red;
+    margin-left:65px;
 }
 
-#login{/*Login button*/
+#profile{/*Profile button*/
     margin-top:25px;
 }
 
 /*USER IMAGE STYLES*/
 #imageContainer{/*Container for user image*/
     margin-top:-8px;
-    margin-left:60px;
-    border: solid 3px blue;
 }
 
 #image{/*User image*/
@@ -239,6 +230,7 @@ li i{/*i from li elements of left sidebar*/
 /*BOOKS STYLES*/
 .books{/*Book row*/
     height: 254px;
+    margin:0px;
 }
 
 .cover{/*Cover of the book*/
@@ -246,14 +238,6 @@ li i{/*i from li elements of left sidebar*/
     height: 150px;
     margin-left:20px;
 } 
-
-.first{/*Fist book*/
-     margin-left:68px;
-}
-
-.last{/*Last book*/
-    margin-right:68px;
-}
 
 .title{/*Book title*/
     font-family: Pluto Sans;
@@ -290,6 +274,7 @@ li i{/*i from li elements of left sidebar*/
 .bookContainer{/*Book container*/
     height: 251px;
     padding: 0;
+  
 }
 
 .bookImage{/*Book image space*/
@@ -341,28 +326,12 @@ li i{/*i from li elements of left sidebar*/
     color:darkgray;
 }
 
-/*@media screen and (max-width: 800px) {
-    .column {
-        margin-left:0px;
-        width: 10%;
-        display: block;
-    }
-  }
-
-  .first{
-      margin-left:0px;
-  }
-  .column {
-    float: left;
-    width: 20%;
-  }*/
-
 /*-Disappearing user image and reorganizing content-*/
 @media (max-width: 768px) { 
     #imageContainer{
         display: none;
     }
-    #login{
+    #profile{
         margin-top:10px;
     }
     #options{
@@ -402,7 +371,6 @@ li i{/*i from li elements of left sidebar*/
     #imageContainer{
         margin-left: 5%;
     }
-
 }
 /*Disappearing top information*/
 @media (max-width: 578px){
@@ -412,12 +380,6 @@ li i{/*i from li elements of left sidebar*/
 }
 /*Giving size to books container*/
 @media (max-width:1234px){
-    .first{
-        margin-left: 0px;
-    }
-    .last{
-        margin-right: 0px;
-    }
     .cover{
         margin-left:0px;
     }
@@ -439,24 +401,6 @@ li i{/*i from li elements of left sidebar*/
     .bookInfo{
         margin-left:40%;
     }
-}
-/*Resizing stars*/
-/* @media (min-width:576px) and (max-width:655px){
-    .fa-star{
-        margin-top:0px;
-        font-size:6px;
-    }
-} */
-
-/* @media(min-width:768px) and (max-width:784px){
-    .fa-star{
-        margin-top:0px;
-        font-size:6px;
-    }
-} */
-
-#myCover{/*Book cover*/
-    background-size: cover;
 }
 
 /*BOOK SELECTION*/
@@ -586,39 +530,6 @@ li i{/*i from li elements of left sidebar*/
     color: #fff;
     font-size: 0.75em;
 }
-/*Box for the last books of the two rows*/
-.onClickTextOverImage .lastBooks {
-    position: absolute;
-    z-index: 100;
-    width: 23em;
-    height: 22.375em;
-    background-color: rgba(35, 31, 32, 0.88);
-    border-radius: 1%;
-    opacity: 0;
-    visibility: hidden;
-    transition: .3s;
-    left:-25em;
-    padding: 1em 2em;
-    text-align: left;
-    color: #fff;
-    font-size: 0.75em;
-}
-/*Right arrow for the last books of the two rows*/
-.onClickTextOverImage .arrow2{
-    visibility: hidden;
-    position: absolute;
-    top:1.5em;
-    left:-0.7em;
-    font-size:35px;
-    color: rgba(35, 31, 32, 0.88);
-    opacity: 0;
-}
-.onClickTextOverImage .arrow2{
-    opacity: 1;
-    visibility: visible;
-}
-
-
 .titleC{/*Title of the book for complete book information*/
     font-family: Pluto Sans;
     font-style: normal;
@@ -651,21 +562,29 @@ li i{/*i from li elements of left sidebar*/
     color: #858585;
 }
 
-article{/*Book summary*/
+article {
     font-family: Pluto Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 9px;
     color: #FFFFFF;
-    margin:0;
-    height: 5em;
-    
-    white-space:nowrap; 
+    margin: 2rem auto;
+    line-height: 1rem;
+  }
+
+article p {
+    max-height: 3rem;/*line-height por nº de líneas*/
     overflow: hidden;
-   
-    line-break: auto;
-    text-overflow: ellipsis;
-}
+    text-align: justify; 
+  }
+
+article p::after {
+    content:'...';
+    position: absolute;
+    top: 7.1rem;/*max-height menos 1 line-height*/
+    left: 16rem;
+  }
+
 
 /*Resizing complete information book box*/
 @media (max-width:575px){
@@ -688,8 +607,8 @@ article{/*Book summary*/
         font-size: 0.75em;
     }
 
-    .arrow,.arrow2{
-        visibility: hidden;
+    .arrow{
+       display: none;
     }
     .recommended{
         display:none;
@@ -699,38 +618,7 @@ article{/*Book summary*/
     }
     
 }
-/*Resizing complete information book box */
-@media (min-width:575px) and (max-width:852px){
 
-    .onClickTextOverImage .firstMiddle {
-        position: absolute;
-        z-index: 100;
-        width: 205px;
-        height: 22.375em;
-        background-color: rgba(35, 31, 32, 0.88);
-        border-radius: 1%;
-        opacity: 0;
-        visibility: hidden;
-        transition: .3s;
-        top: 0;
-        left: -6em;
-        padding: 1em 2em;
-        text-align: left;
-        color: #fff;
-        font-size: 0.75em;
-    }
-
-    .arrow,.arrow2{
-        visibility: hidden;
-    }
-    .recommended{
-        display:none;
-    }
-    .recommend{
-        visibility: hidden;
-    }
-    
-}
 
 @media (min-width:768px) and (max-width:992){
     #sidebarR{
@@ -739,7 +627,7 @@ article{/*Book summary*/
 
 }
 
-.libro{
+.coverPage{
     width:6.25em;
     height:9.36em;
 }
@@ -747,3 +635,5 @@ article{/*Book summary*/
 .bookInfo{
     height: 80px;
 }
+
+

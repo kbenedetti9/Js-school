@@ -5,15 +5,25 @@ var browserify = require('browserify');
 var buffer     = require('vinyl-buffer');
 var source     = require('vinyl-source-stream');
 
+// gulp.task('build:js', function () {
+//   return browserify("./assets/js/script2.js")
+//     .transform(babelify, {
+//         presets: ['@babel/preset-env']
+//     })
+//     .bundle()
+//     .pipe(source('./assets/js/script2.js'))
+//     // .pipe(buffer())
+//     .pipe(gulp.dest('./build/'));
+// });
+
+
 gulp.task('build:js', function () {
-  return browserify("./assets/js/script2.js")
+  return browserify("./assets/js/showBooks2.js")
     .transform(babelify, {
         presets: ['@babel/preset-env']
     })
     .bundle()
-    .pipe(source('./assets/js/script2.js'))
+    .pipe(source('./showBooks2.js'))
     // .pipe(buffer())
-    .pipe(gulp.dest('./build/'));
+    .pipe(gulp.dest('./compiled/'));
 });
-
-
