@@ -1,16 +1,16 @@
-var fetch = require('node-fetch');
-var _fs = require("fs");
+var fetch = require('node-fetch');/*Importing fetch */
+var _fs = require("fs");/*Importing file system module*/
 
 var obj = {
     books: []
 };
 
-fetch("https://www.googleapis.com/books/v1/volumes?q=adventure")
+fetch("https://www.googleapis.com/books/v1/volumes?q=adventure")/*Fetch to consume API to obtain adventure books information */
     .then(function (resp) {
         return resp.json();
     }).then(function (data) {
         for (let i = 0; i < 10; i++) {
-            obj.books.push({
+            obj.books.push({/*Pushing info into the object*/
                 title: data.items[i].volumeInfo.title,
                 author: data.items[i].volumeInfo.authors,
                 rating: data.items[i].volumeInfo.averageRating,
@@ -20,8 +20,8 @@ fetch("https://www.googleapis.com/books/v1/volumes?q=adventure")
             });
         }
         let json = JSON.stringify(obj, null, 2);
-        console.log(json);
-        _fs.writeFileSync("books.json", json, function (err) {
+        
+        _fs.writeFileSync("books.json", json, function (err) {/*Creating and writing a new json file with the info*/
             if (err) throw err;
             console.log('Saved!');
         });

@@ -1,3 +1,6 @@
+
+import fetch from "node-fetch";
+
 function clickBook() {/*Function to show complete information when a book is clicked*/
     var textOverImages = document.getElementsByClassName("onClickTextOverImage");
     var previousTextOverImage;
@@ -45,7 +48,7 @@ fetch("./assets/js/books.json")/*Fetch to obtain json of books information */
                             <img class="coverPage" src="${obj.books[i].image}"/>
                             <div class="back">
                                 <div>
-                                    <img onclick="stopPropagation(event)" class="heart"
+                                    <img class="heart"
                                         src="assets/img/heart.png">
                                     <img class="bookMark" src="assets/img/bookmark.png">
                                     <img class="bookOpen" src="assets/img/book-open.png">
@@ -108,7 +111,7 @@ fetch("./assets/js/books.json")/*Fetch to obtain json of books information */
                         <img class="coverPage" src="${obj.books[i].image}"/>
                         <div class="back">
                             <div>
-                                <img onclick="stopPropagation(event)" class="heart"
+                                <img class="heart"
                                     src="assets/img/heart.png">
                                 <img class="bookMark" src="assets/img/bookmark.png">
                                 <img class="bookOpen" src="assets/img/book-open.png">
