@@ -1,5 +1,5 @@
 
-// import fetch from "node-fetch";
+import fetch from "node-fetch";
 
 function clickBook() {/*Function to show complete information when a book is clicked*/
     var textOverImages = document.getElementsByClassName("onClickTextOverImage");
