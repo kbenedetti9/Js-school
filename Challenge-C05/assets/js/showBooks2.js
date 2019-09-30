@@ -1,5 +1,5 @@
 
-import fetch from "node-fetch";
+// import fetch from "node-fetch";
 
 function clickBook() {/*Function to show complete information when a book is clicked*/
     var textOverImages = document.getElementsByClassName("onClickTextOverImage");
@@ -22,7 +22,7 @@ function clickBook() {/*Function to show complete information when a book is cli
 var obj = {/*Object to obtain json information*/
     books: []
 };
- 
+
 fetch("./assets/js/books.json")/*Fetch to obtain json of books information */
     .then((resp) => resp.json())
     .then(function (data) {
@@ -173,48 +173,30 @@ function getStars(rating, number) {/*Function to get the stars icon*/
         rating = 0;
     }
 
-    let stars;
+    let stars = "";
     var ratingNumber = Math.trunc(Number(rating));
 
     if (number == 1) {/*If the stars are blue*/
 
-        for (var i = 0; i < ratingNumber; i++) {
-            stars ?
-                (stars += '<i class="fas fa-star"></i>\n')
-                :
-                (stars = '<i class="fas fa-star"></i>\n');
-        }
+        for (var i = 0; i < 5; i++) {
+            if (i < ratingNumber) {
+                stars += '<i class="fas fa-star"></i>\n';
 
-        if (ratingNumber !== 5) {
-            for (var i = 0; i < (5 - ratingNumber); i++) {
-                stars
-                    ?
-                    stars += '<i class="far fa-star"></i>\n'
-                    :
-                    stars = '<i class="far fa-star"></i>\n';
+            } else {
+                stars += '<i class="far fa-star"></i>\n';
             }
         }
+
     } else {/*If the stars are yellow*/
 
-        for (var i = 0; i < ratingNumber; i++) {
-            stars
-                ?
-                (stars += '<i class="fas fa-star stars"></i>\n')
-                :
-                (stars = '<i class="fas fa-star stars"></i>\n');
-        }
+        for (var i = 0; i < 5; i++) {
+            if (i < ratingNumber) {
+                stars += '<i class="fas fa-star stars"></i>\n';
 
-        if (ratingNumber !== 5) {
-            for (var i = 0; i < (5 - ratingNumber); i++) {
-                stars
-                    ?
-                    stars += '<i class="far fa-star stars"></i>\n'
-                    :
-                    stars = '<i class="far fa-star stars"></i>\n';
+            } else {
+                stars += '<i class="far fa-star stars"></i>\n';
             }
         }
-
     }
     return stars;
-
 }
