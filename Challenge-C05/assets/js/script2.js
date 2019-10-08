@@ -9,6 +9,7 @@ fetch("https://www.googleapis.com/books/v1/volumes?q=adventure")/*Fetch to consu
     .then(function (resp) {
         return resp.json();
     }).then(function (data) {
+        console.log(data);
         for (let i = 0; i < 10; i++) {
             obj.books.push({/*Pushing info into the object*/
                 title: data.items[i].volumeInfo.title,
@@ -16,7 +17,10 @@ fetch("https://www.googleapis.com/books/v1/volumes?q=adventure")/*Fetch to consu
                 rating: data.items[i].volumeInfo.averageRating,
                 pages: data.items[i].volumeInfo.pageCount,
                 description: data.items[i].volumeInfo.description,
-                image: data.items[i].volumeInfo.imageLinks.thumbnail
+                image: data.items[i].volumeInfo.imageLinks.thumbnail,
+                isbn: data.items[i].volumeInfo.industryIdentifiers,
+                date: data.items[i].volumeInfo.publishedDate,
+                id: data.items[i].id
             });
         }
         let json = JSON.stringify(obj, null, 2);
